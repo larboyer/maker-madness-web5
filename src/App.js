@@ -10,7 +10,7 @@ function App() {
           MakerMadnessWeb5
         </p>
         <p>
-          What Will You Make?
+          What Will You Make Today?
         </p>
         <a
           className="App-link"
