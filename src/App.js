@@ -9,6 +9,9 @@ function App() {
         <p>
           MakerMadnessWeb5
         </p>
+        <p>
+          What Will You Make?
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
