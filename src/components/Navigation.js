@@ -5,11 +5,9 @@ const Navigation = () => {
     return (
        <div>
 			<NavLink to="/">Home</NavLink> | <sp/>
-			<NavLink to="/takenmake">Take & Make</NavLink> | <sp/>
-			<NavLink to="/codejoy">Code Joy</NavLink> | <sp/>
-			<NavLink to="/home2">Home2</NavLink> | <sp/>
-			<NavLink to="/about">About</NavLink> | <sp/>
-			<NavLink to="/contact">Contact</NavLink>
+			<NavLink to="/make">Make</NavLink> | <sp/>
+			<NavLink to="/code">Code</NavLink> | <sp/>
+			<NavLink to="/give">Give</NavLink> 
 		</div>
 	);
 }
