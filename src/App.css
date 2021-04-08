@@ -4,7 +4,13 @@
 }
 
 .achieve-logo {
-	width: 75%;
+	width: 50%;
+	height: auto;
+	/* border: 1px solid blue; */
+}
+
+.home-achieve-logo {
+	width: 50%;
 	height: auto;
 	/* border: 1px solid blue; */
 }
