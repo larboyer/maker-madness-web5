@@ -23,7 +23,7 @@
     "test": "craco test",
     "eject": "react-scripts eject"
   },
-    "engines": {
+  "engines": {
     "node": ">=14.0.0"
   },
   "eslintConfig": {
