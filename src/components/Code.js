@@ -1,11 +1,11 @@
-import React from 'react';
- 
+import React from "react";
+
 const Code = () => {
-    return (
-       <div>
-          <h1>Code</h1>
-       </div>
-    );
-}
- 
+  return (
+    <div>
+      <h1>Code</h1>
+    </div>
+  );
+};
+
 export default Code;
