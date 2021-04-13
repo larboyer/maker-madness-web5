@@ -31,7 +31,7 @@ const Header = (props) => {
 
   const mobileMenuClasses = classNames([
     'absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden',
-    menuState ? null : 'hidden',
+    menuState ? 'z-10' : 'hidden',
   ]);
 
   return (
