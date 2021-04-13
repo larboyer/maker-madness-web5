@@ -23,15 +23,6 @@ const Footer = () => {
               to="/make"
               className="text-base text-gray-500 hover:text-gray-900"
             >
-              Make
-            </NavLink>
-          </div>
-
-          <div className="px-5 py-2">
-            <NavLink
-              to="/make"
-              className="text-base text-gray-500 hover:text-gray-900"
-            >
               Take&amp;Make
             </NavLink>
           </div>
