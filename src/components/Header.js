@@ -41,7 +41,7 @@ const Header = (props) => {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a
               href="/"
-              className="logo text-yellow-600 hover:text-yellow-500 active:text-yellow-500 flex flex-row items-center space-x-2"
+              className="logo text-yellow-600 hover:text-yellow-500 active:text-yellow-500 flex flex-row items-center space-x-2 transition delay-150"
             >
               <span className="sr-only">Maker Madness 2021</span>
               <FontAwesomeIcon icon={faLightbulb} />
@@ -81,7 +81,7 @@ const Header = (props) => {
                 aria-expanded="false"
               >
                 <FontAwesomeIcon
-                  className="flex-shrink-0 h-6 w-6 text-blue-600"
+                  className="flex-shrink-0 text-blue-600 group-hover:text-blue-800"
                   icon={faTools}
                 />
                 <span className="ml-3">Make</span>
@@ -100,7 +100,8 @@ const Header = (props) => {
                 </svg>
               </NavLink>
 
-              <div className={mobileMenuClasses}>
+              {/* TODO: Need to get a click handler setup to show/hide this dropdown menu */}
+              <div className="hidden absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     <NavLink
@@ -109,7 +110,7 @@ const Header = (props) => {
                     >
                       <FontAwesomeIcon
                         icon={faToolbox}
-                        className="flex-shrink-0 h-6 w-6 text-blue-600"
+                        className="flex-shrink-0 text-blue-600"
                       />
                       <div className="ml-4">
                         <p className="text-base font-medium text-gray-900">
