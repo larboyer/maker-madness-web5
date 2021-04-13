@@ -13,8 +13,7 @@ import Give from './components/Give';
 // import Home2 from './components/Home2';
 // import About from './components/About';
 // import Contact from './components/Contact';
-// import Navigation from './components/Navigation';
-import Navigation2 from './components/Navigation2';
+import Header from './components/Header';
 import TakeMake01 from './components/TakeMake01';
 import TakeMake02 from './components/TakeMake02';
 import TakeMake03 from './components/TakeMake03';
@@ -24,7 +23,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Navigation2 />
+        <Header />
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/make" component={Make} exact />

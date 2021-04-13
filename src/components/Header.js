@@ -11,11 +11,17 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import maker_madness from '../img/maker_madness_00.png';
 
-const Navigation2 = (props) => {
+const Header = (props) => {
   const [menuState, setMobileMenuState] = useState(false);
+
+  /**
+   * Click handler for the mobile menu
+   * Toggles the menuState
+   *
+   * @param {Object} e - Event object
+   */
   const handleMobileMenu = (e) => {
     e.preventDefault();
-
     if (menuState) {
       setMobileMenuState(false);
     } else {
@@ -23,7 +29,7 @@ const Navigation2 = (props) => {
     }
   };
 
-  let mobileMenuClasses = classNames([
+  const mobileMenuClasses = classNames([
     'absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden',
     menuState ? null : 'hidden',
   ]);
@@ -38,7 +44,7 @@ const Navigation2 = (props) => {
               className="logo text-yellow-600 hover:text-yellow-500 active:text-yellow-500 flex flex-row items-center space-x-2"
             >
               <span className="sr-only">Maker Madness 2021</span>
-              <FontAwesomeIcon className="fill-current" icon={faLightbulb} />
+              <FontAwesomeIcon icon={faLightbulb} />
               <img src={maker_madness} className="h-6" alt="logo" />
             </a>
           </div>
@@ -282,4 +288,4 @@ const Navigation2 = (props) => {
   );
 };
 
-export default Navigation2;
+export default Header;
