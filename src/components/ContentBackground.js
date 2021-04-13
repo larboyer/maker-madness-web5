@@ -2,13 +2,13 @@ import React from 'react';
 
 const ContentBackground = () => {
   return (
-    <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+    <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
       <div
-        class="relative h-full text-lg max-w-prose mx-auto"
+        className="relative h-full text-lg max-w-prose mx-auto"
         aria-hidden="true"
       >
         <svg
-          class="absolute top-12 left-full transform translate-x-32"
+          className="absolute top-12 left-full transform translate-x-32"
           width="404"
           height="384"
           fill="none"
@@ -28,7 +28,7 @@ const ContentBackground = () => {
                 y="0"
                 width="4"
                 height="4"
-                class="text-gray-200"
+                className="text-gray-200"
                 fill="currentColor"
               />
             </pattern>
@@ -40,7 +40,7 @@ const ContentBackground = () => {
           />
         </svg>
         <svg
-          class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"
+          className="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"
           width="404"
           height="384"
           fill="none"
@@ -60,7 +60,7 @@ const ContentBackground = () => {
                 y="0"
                 width="4"
                 height="4"
-                class="text-gray-200"
+                className="text-gray-200"
                 fill="currentColor"
               />
             </pattern>
@@ -72,7 +72,7 @@ const ContentBackground = () => {
           />
         </svg>
         <svg
-          class="absolute bottom-12 left-full transform translate-x-32"
+          className="absolute bottom-12 left-full transform translate-x-32"
           width="404"
           height="384"
           fill="none"
@@ -92,7 +92,7 @@ const ContentBackground = () => {
                 y="0"
                 width="4"
                 height="4"
-                class="text-gray-200"
+                className="text-gray-200"
                 fill="currentColor"
               />
             </pattern>

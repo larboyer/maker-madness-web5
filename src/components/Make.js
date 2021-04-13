@@ -3,23 +3,23 @@ import ContentBackground from './ContentBackground';
 
 const Make = () => {
   return (
-    <div class="relative py-16 bg-white overflow-hidden">
+    <div className="relative py-16 bg-white overflow-hidden">
       <ContentBackground />
-      <div class="relative px-4 sm:px-6 lg:px-8">
-        <div class="text-lg max-w-prose mx-auto">
+      <div className="relative px-4 sm:px-6 lg:px-8">
+        <div className="text-lg max-w-prose mx-auto">
           <h1>
-            <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
+            <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
               Maker Madness
             </span>
-            <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Make
             </span>
           </h1>
-          <p class="mt-8 text-xl text-gray-500 leading-8">
+          <p className="mt-8 text-xl text-gray-500 leading-8">
             Make awsome things. Do it often!
           </p>
         </div>
-        <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+        <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
           <p>
             Faucibus commodo massa rhoncus, volutpat. <strong>Dignissim</strong>{' '}
             sed <strong>eget risus enim</strong>. Mattis mauris semper sed amet
@@ -70,7 +70,7 @@ const Make = () => {
           </p>
           <figure>
             <img
-              class="w-full rounded-lg"
+              className="w-full rounded-lg"
               src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
               alt=""
               width="1310"
