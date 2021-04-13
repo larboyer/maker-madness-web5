@@ -12,26 +12,43 @@ import {
 import maker_madness from '../img/maker_madness_00.png';
 
 const Header = (props) => {
-  const [menuState, setMobileMenuState] = useState(false);
+  const [mobileMenuState, setMobileMenuState] = useState(false);
+  const [makeDropMenuState, setMakeDropMenuState] = useState(false);
 
   /**
    * Click handler for the mobile menu
-   * Toggles the menuState
+   * Toggles the mobileMenuState
    *
    * @param {Object} e - Event object
    */
   const handleMobileMenu = (e) => {
     e.preventDefault();
-    if (menuState) {
-      setMobileMenuState(false);
+    setMobileMenuState(!mobileMenuState);
+  };
+
+  /**
+   * Click handler for the maker drop down menu
+   * Toggles the makeDropMenuState
+   *
+   * @param {Object} e - Event object
+   */
+  const handleMakerDropMenu = (e) => {
+    e.preventDefault();
+    if (makeDropMenuState) {
+      setMakeDropMenuState(false);
     } else {
-      setMobileMenuState(true);
+      setMakeDropMenuState(true);
     }
   };
 
   const mobileMenuClasses = classNames([
     'absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden',
-    menuState ? 'z-10' : 'hidden',
+    mobileMenuState ? 'z-10' : 'hidden',
+  ]);
+
+  const makeDropDownClasses = classNames([
+    'absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2',
+    makeDropMenuState ? 'z-10' : 'hidden',
   ]);
 
   return (
@@ -62,7 +79,7 @@ const Header = (props) => {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                aria-hidden={menuState}
+                aria-hidden={mobileMenuState}
               >
                 <path
                   strokeLinecap="round"
@@ -75,10 +92,10 @@ const Header = (props) => {
           </div>
           <nav className="hidden md:flex space-x-10">
             <div className="relative">
-              <NavLink
-                to="/make"
+              <button
+                onClick={handleMakerDropMenu}
                 className="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                aria-expanded="false"
+                aria-expanded={makeDropMenuState}
               >
                 <FontAwesomeIcon
                   className="flex-shrink-0 text-blue-600 group-hover:text-blue-800"
@@ -98,10 +115,9 @@ const Header = (props) => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </NavLink>
+              </button>
 
-              {/* TODO: Need to get a click handler setup to show/hide this dropdown menu */}
-              <div className="hidden absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+              <div className={makeDropDownClasses}>
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     <NavLink
