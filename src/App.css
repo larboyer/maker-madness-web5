@@ -1,18 +1,18 @@
 .App {
-	text-align: center;
-	color: blue;
+  text-align: center;
+  color: blue;
 }
 
 .achieve-logo {
-	width: 50%;
-	height: auto;
-	/* border: 1px solid blue; */
+  width: 50%;
+  height: auto;
+  /* border: 1px solid blue; */
 }
 
 .home-achieve-logo {
-	width: 50%;
-	height: auto;
-	/* border: 1px solid blue; */
+  width: 50%;
+  height: auto;
+  /* border: 1px solid blue; */
 }
 
 .App-header {
@@ -29,4 +29,3 @@
 .App-link {
   color: #61dafb;
 }
-
