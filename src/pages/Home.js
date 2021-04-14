@@ -1,7 +1,7 @@
 import React from 'react';
 import mm_bulb from '../img/mm_bulb_00.png';
 import achieve_logo from '../img/achieve_logo_02.png';
-import ContentBackground from './ContentBackground';
+import ContentBackground from '../components/ContentBackground';
 
 const Home = () => {
   return (
@@ -56,8 +56,8 @@ const Home = () => {
                 age levels
               </li>
             </ul>
-            <img className="achieve-logo" src={mm_bulb} alt="logo" />
-            <img className="home-achieve-logo" src={achieve_logo} alt="logo" />
+            <img src={mm_bulb} alt="logo" />
+            <img src={achieve_logo} alt="logo" />
           </div>
         </div>
       </div>

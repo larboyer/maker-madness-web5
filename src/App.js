@@ -1,22 +1,13 @@
 import React, { Component } from 'react';
-// import achieve_logo from './img/achieve_logo_02.png';
-// import mm_bulb from './img/mm_bulb_00.png';
-// import maker_madness from './img/maker_madness_00.png';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
-import Home from './components/Home';
-// import TakeNMake from './components/TakeNMake';
-import Make from './components/Make';
-import Code from './components/Code';
-import Give from './components/Give';
-// import CodeJoy from './components/CodeJoy';
-// import Home2 from './components/Home2';
-// import About from './components/About';
-// import Contact from './components/Contact';
+import Home from './pages/Home';
+import Make from './pages/Make';
+import Code from './pages/Code';
+import Give from './pages/Give';
+import TakeMake01 from './pages/TakeMake01';
+import TakeMake02 from './pages/TakeMake02';
+import TakeMake03 from './pages/TakeMake03';
 import Header from './components/Header';
-import TakeMake01 from './components/TakeMake01';
-import TakeMake02 from './components/TakeMake02';
-import TakeMake03 from './components/TakeMake03';
 import Footer from './components/Footer';
 
 class App extends Component {

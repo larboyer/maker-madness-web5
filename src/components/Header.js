@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
-import MobileNavigation from './MobileNavigation';
+import MobileNavigation from '../components/MobileNavigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLightbulb,

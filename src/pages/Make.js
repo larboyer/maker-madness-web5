@@ -1,5 +1,5 @@
 import React from 'react';
-import ContentBackground from './ContentBackground';
+import ContentBackground from '../components/ContentBackground';
 
 const Make = () => {
   return (
