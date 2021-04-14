@@ -20,8 +20,8 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "npm i && TAILWIND_MODE=watch craco start",
-    "build": "TAILWIND_MODE=build craco build",
+    "start": "craco start",
+    "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
