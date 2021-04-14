@@ -6,16 +6,16 @@ import ContentBackground from './ContentBackground';
 const Home = () => {
   return (
     <>
-      <div class="bg-white">
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <div class="text-center">
-            <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">
               Maker Madness 2021
             </h2>
-            <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+            <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
               @Home edition!
             </p>
-            <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+            <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
               We're taking the event from the CHS cafe to your kitchen table.
             </p>
           </div>
@@ -56,7 +56,7 @@ const Home = () => {
                 age levels
               </li>
             </ul>
-            <img class="achieve-logo" src={mm_bulb} alt="logo" />
+            <img className="achieve-logo" src={mm_bulb} alt="logo" />
             <img className="home-achieve-logo" src={achieve_logo} alt="logo" />
           </div>
         </div>
