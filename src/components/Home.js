@@ -1,4 +1,5 @@
 import React from 'react';
+import mm_logo from '../img/maker_madness_00.png';
 import mm_bulb from '../img/mm_bulb_00.png';
 import achieve_logo from '../img/achieve_logo_02.png';
 import ContentBackground from './ContentBackground';
@@ -9,30 +10,29 @@ const Home = () => {
       <ContentBackground />
       <div className="relative px-4 sm:px-6 lg:px-8">
         <div className="text-lg max-w-prose mx-auto">
-          <h1>
-            <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
-              Maker Madness
-            </span>
-            <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Home
-            </span>
-          </h1>
           <p className="mt-8 text-xl text-gray-500 leading-8">
-            Make awsome things. Do it often!
+            Welcome to Maker Madness 2021 - @Home edition! We're taking the event from
+            the CHS cafe to your kitchen table. 
           </p>
         </div>
         <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-          <img src={mm_bulb} alt="logo" />
-          <br />
-          <img src={achieve_logo} alt="logo" />
-          <p>
-            Faucibus commodo massa rhoncus, volutpat. <strong>Dignissim</strong>{' '}
-            sed <strong>eget risus enim</strong>. Mattis mauris semper sed amet
-            vitae sed turpis id. Id dolor praesent donec est. Odio penatibus
-            risus viverra tellus varius sit neque erat velit. Faucibus commodo
-            massa rhoncus, volutpat. Dignissim sed eget risus enim.{' '}
-            <a href="/">Mattis mauris semper</a> sed amet vitae sed turpis id.
+          <img class="mm-logo" src={mm_logo} alt="logo" />
+          <h4 className="mt-8 text-xl text-gray-500 leading-8">
+            Saturday, April 24th, 10-2pm.
+          </h4>
+          <p class="right-copy">
+            <h4>Activities</h4>
+            <ul class="bullet-items">
+				<li><strong>Take&Make</strong> - Pick up project bags around South Orange & Maplewood.</li>
+				<li><strong>OYO (OnYourOwn)</strong> - Do projects just with materials you can prob find @home</li>
+				<li><strong>Meet the Bees</strong> - Come buzz with a real bee colony</li>
+				<li><strong>Live Demos</strong> - Come see on utside woodworking demonstration</li>
+				<li><strong>CodeJoy</strong> - Learn to code online with friendly, connected cardboard robots</li>
+				<li><strong>Code.org</strong> - Or try other code challenges for all age levels</li>
+            </ul>
           </p>
+          <img class="achieve-logo" src={mm_bulb} alt="logo" />
+          <img className="home-achieve-logo" src={achieve_logo} alt="logo" />
         </div>
       </div>
     </div>

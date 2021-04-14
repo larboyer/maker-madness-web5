@@ -4,15 +4,31 @@
 }
 
 .achieve-logo {
-  width: 50%;
+  width: 55%;
   height: auto;
-  /* border: 1px solid blue; */
+}
+
+.mm-logo {
+  float: right;
+  width: 55%;
+  height: auto;
+}
+
+.right-copy {
+  float: right;
+  width: 100%;
+  height: auto;
 }
 
 .home-achieve-logo {
-  width: 50%;
+  float: right;
+  width: 55%;
   height: auto;
-  /* border: 1px solid blue; */
+}
+
+.bullet-items {
+  line-height: 95%;
+  height: auto;
 }
 
 .App-header {
