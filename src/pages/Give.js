@@ -1,7 +1,7 @@
 import React from 'react';
-import ContentBackground from './ContentBackground';
+import ContentBackground from '../components/ContentBackground';
 
-const Code = () => {
+const Give = () => {
   return (
     <div className="relative py-16 bg-white overflow-hidden">
       <ContentBackground />
@@ -12,11 +12,16 @@ const Code = () => {
               Maker Madness
             </span>
             <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Code
+              Give
             </span>
           </h1>
-          <p className="mt-8 text-xl text-gray-500 leading-8">
-            Make awsome things. Do it often!
+        </div>
+        <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+          <p>
+            Please consider a small contribution to{' '}
+            <a href="https://achievefoundation.org/donation-form/">
+              help out all the activies of The Achieve Foundation.
+            </a>
           </p>
         </div>
       </div>
@@ -24,4 +29,4 @@ const Code = () => {
   );
 };
 
-export default Code;
+export default Give;
