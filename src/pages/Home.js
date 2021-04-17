@@ -6,7 +6,7 @@ import PageTemplate from '../components/PageTemplate';
 const Home = () => {
   return (
     <>
-      <div className="relative bg-white overflow-hidden">
+      <div className="relative bg-white py-16 overflow-hidden">
         <div className="absolute inset-0">
           <img className="w-full h-full object-cover" src={mm_bulb} alt="" />
           <div

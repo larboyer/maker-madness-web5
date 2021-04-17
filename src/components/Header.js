@@ -18,7 +18,7 @@ const Header = (props) => {
   const make = [
     {
       name: 'Take&Make',
-      href: '#',
+      href: '/takemake02',
       description:
         'A bag of stuff with the QR code pointing to the specific page!',
       icon: PuzzleIcon,
