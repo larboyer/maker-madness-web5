@@ -20,7 +20,7 @@ import img17 from '../img/tnm02/tnm02-56.jpg';
 const TakeMake02 = () => {
   return (
     <div className="prose">
-      <h1>Take&amp;Make 2</h1>
+      <h1>Take&amp;Make #2</h1>
       <h3>Maker Madness Light Bulb Gets Lit!</h3>
       <h5>Build a parallel circuit to make your light bulb shine!</h5>
       <br />

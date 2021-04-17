@@ -4,9 +4,18 @@ import Home from './pages/Home';
 import Make from './pages/Make';
 import Code from './pages/Code';
 import Give from './pages/Give';
+
 import TakeMake01 from './pages/TakeMake01';
 import TakeMake02 from './pages/TakeMake02';
 import TakeMake03 from './pages/TakeMake03';
+import TakeMake04 from './pages/TakeMake04';
+import TakeMake05 from './pages/TakeMake05';
+import TakeMake06 from './pages/TakeMake06';
+import TakeMake07 from './pages/TakeMake07';
+import TakeMake08 from './pages/TakeMake08';
+import TakeMake09 from './pages/TakeMake09';
+import TakeMake10 from './pages/TakeMake10';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -23,6 +32,13 @@ class App extends Component {
           <Route path="/takemake01" component={TakeMake01} exact />
           <Route path="/takemake02" component={TakeMake02} exact />
           <Route path="/takemake03" component={TakeMake03} exact />
+          <Route path="/takemake04" component={TakeMake04} exact />
+          <Route path="/takemake05" component={TakeMake05} exact />
+          <Route path="/takemake06" component={TakeMake06} exact />
+          <Route path="/takemake07" component={TakeMake07} exact />
+          <Route path="/takemake08" component={TakeMake08} exact />
+          <Route path="/takemake09" component={TakeMake09} exact />
+          <Route path="/takemake10" component={TakeMake10} exact />
         </Switch>
         <Footer />
       </BrowserRouter>
