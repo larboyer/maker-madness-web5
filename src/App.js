@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
-import Make from './pages/Make';
 import Code from './pages/Code';
 import Give from './pages/Give';
 
@@ -27,7 +26,6 @@ class App extends Component {
         <Header />
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/make" component={Make} exact />
           <Route path="/code" component={Code} exact />
           <Route path="/give" component={Give} exact />
           <Route path="/takemake" component={TakeNMake} exact />
