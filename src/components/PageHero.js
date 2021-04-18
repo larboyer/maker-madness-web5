@@ -18,9 +18,9 @@ const PageHero = (props) => {
           <p className="text-base font-semibold text-indigo-200 tracking-wide uppercase">
             {props.supHeader}
           </p>
-          <h2 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+          <h1 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
             {props.mainHeader}
-          </h2>
+          </h1>
           <p className="mt-5 text-xl text-gray-400">{props.subHeader}</p>
         </div>
       </div>
