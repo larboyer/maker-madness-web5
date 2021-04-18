@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import mm_bulb from '../img/mm_bulb_00.png';
 
 const PageHero = (props) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (document.hasFocus()) {
+      console.log(ref.current);
+      ref.current.focus();
+    }
+  }, []);
+
   return (
-    <div className="relative py-16 bg-white overflow-hidden">
+    <header className="relative py-16 bg-white overflow-hidden">
       <div className="absolute inset-0">
         <img className="w-full h-full object-cover" src={mm_bulb} alt="" />
         <div
@@ -18,7 +27,8 @@ const PageHero = (props) => {
             {props.supHeader}
           </p>
           <h1
-            tabIndex="-1"
+            ref={ref}
+            tabIndex={-1}
             className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"
           >
             {props.mainHeader}
@@ -26,7 +36,7 @@ const PageHero = (props) => {
           <p className="mt-5 text-xl text-gray-400">{props.subHeader}</p>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

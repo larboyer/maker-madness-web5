@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import mm_bulb from '../img/mm_bulb_00.png';
 import achieve_logo from '../img/achieve_logo_02.png';
 import PageTemplate from '../components/PageTemplate';
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (document.hasFocus()) {
+      console.log(ref.current);
+      ref.current.focus();
+    }
+  }, []);
   return (
     <>
       <div className="relative bg-white py-16 overflow-hidden">
@@ -18,12 +26,16 @@ const Home = () => {
         </div>
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-base font-semibold text-indigo-200 tracking-wide uppercase">
+            <p className="text-base font-semibold text-indigo-200 tracking-wide uppercase">
               @Home edition!
-            </h2>
-            <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-              Maker Madness 2021
             </p>
+            <h1
+              ref={ref}
+              tabIndex={-1}
+              className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"
+            >
+              Maker Madness 2021
+            </h1>
             <p className="max-w-xl mt-5 mx-auto text-xl text-gray-300">
               We're taking the event from the CHS cafe to your kitchen table.
             </p>
