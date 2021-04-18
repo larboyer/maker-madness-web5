@@ -2,6 +2,7 @@ import React from 'react';
 import mm_bulb from '../img/mm_bulb_00.png';
 import achieve_logo from '../img/achieve_logo_02.png';
 import PageTemplate from '../components/PageTemplate';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -34,8 +35,10 @@ const Home = () => {
         <h4>Activities</h4>
         <ul>
           <li>
-            <strong>Take&amp;Make</strong> - Pick up project bags around South
-            Orange &amp; Maplewood.
+            <NavLink to={`/takemake`}>
+              <strong>Take&amp;Make</strong>
+            </NavLink>
+            - Pick up project bags around South Orange &amp; Maplewood.
           </li>
           <li>
             <strong>OYO (OnYourOwn)</strong> - Do projects just with materials

@@ -14,19 +14,19 @@ import {
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import maker_madness from '../img/maker_madness_00.png';
 
-const Header = (props) => {
+const Header = () => {
   const make = [
     {
       name: 'Take&Make',
-      href: '/takemake02',
+      href: '/takemake',
       description:
-        'A bag of stuff with the QR code pointing to the specific page!',
+        'A bag of stuff with QR codes pointing to the specific activity!',
       icon: PuzzleIcon,
     },
     {
       name: 'OYO',
       href: '#',
-      description: 'OnYourOwn with  written instructions',
+      description: 'OnYourOwn with  written instructions!',
       icon: BookOpenIcon,
     },
   ];

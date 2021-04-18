@@ -1,5 +1,4 @@
 import React from 'react';
-// import ContentBackground from './ContentBackground';
 import mm_bulb from '../img/mm_bulb_00.png';
 
 const PageHero = (props) => {
@@ -18,7 +17,10 @@ const PageHero = (props) => {
           <p className="text-base font-semibold text-indigo-200 tracking-wide uppercase">
             {props.supHeader}
           </p>
-          <h1 className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+          <h1
+            tabIndex="-1"
+            className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"
+          >
             {props.mainHeader}
           </h1>
           <p className="mt-5 text-xl text-gray-400">{props.subHeader}</p>

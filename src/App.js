@@ -5,6 +5,7 @@ import Make from './pages/Make';
 import Code from './pages/Code';
 import Give from './pages/Give';
 
+import TakeNMake from './pages/TakeNMake';
 import TakeMake01 from './pages/TakeMake01';
 import TakeMake02 from './pages/TakeMake02';
 import TakeMake03 from './pages/TakeMake03';
@@ -29,6 +30,7 @@ class App extends Component {
           <Route path="/make" component={Make} exact />
           <Route path="/code" component={Code} exact />
           <Route path="/give" component={Give} exact />
+          <Route path="/takemake" component={TakeNMake} exact />
           <Route path="/takemake01" component={TakeMake01} exact />
           <Route path="/takemake02" component={TakeMake02} exact />
           <Route path="/takemake03" component={TakeMake03} exact />
