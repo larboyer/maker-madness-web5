@@ -18,12 +18,12 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-base font-semibold text-indigo-200 tracking-wide uppercase">
-              Maker Madness 2021
+              @Home edition!
             </h2>
             <p className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
-              @Home edition!
+              Maker Madness 2021
             </p>
-            <p className="max-w-xl mt-5 mx-auto text-xl text-gray-400">
+            <p className="max-w-xl mt-5 mx-auto text-xl text-gray-300">
               We're taking the event from the CHS cafe to your kitchen table.
             </p>
           </div>
