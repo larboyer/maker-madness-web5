@@ -32,7 +32,7 @@ const Home = () => {
             <h1
               ref={ref}
               tabIndex={-1}
-              className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl"
+              className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl  focus:outline-none focus:ring-8 focus:ring-indigo-600 focus:ring-offset-8 focus:ring-offset-indigo-700"
             >
               Maker Madness 2021
             </h1>
