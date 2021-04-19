@@ -2,17 +2,16 @@ import React, { useRef, useEffect } from 'react';
 import mm_bulb from '../img/mm_bulb_00.png';
 import achieve_logo from '../img/achieve_logo_02.png';
 import PageTemplate from '../components/PageTemplate';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 
 const Home = () => {
-  const ref = useRef(null);
+  const mainHeaderNode = useRef(null);
+  let { page } = useParams();
 
   useEffect(() => {
-    if (document.hasFocus()) {
-      console.log(ref.current);
-      ref.current.focus();
-    }
-  }, []);
+    mainHeaderNode.current.focus();
+  }, [page]);
+
   return (
     <>
       <div className="relative bg-white py-16 overflow-hidden">
@@ -30,7 +29,7 @@ const Home = () => {
               @Home edition!
             </p>
             <h1
-              ref={ref}
+              ref={mainHeaderNode}
               tabIndex={-1}
               className="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl  focus:outline-none focus:ring-8 focus:ring-indigo-600 focus:ring-offset-8 focus:ring-offset-indigo-700"
             >

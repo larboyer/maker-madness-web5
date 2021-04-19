@@ -1,15 +1,14 @@
 import React, { useRef, useEffect } from 'react';
 import mm_bulb from '../img/mm_bulb_00.png';
+import { useParams } from 'react-router-dom';
 
 const PageHero = (props) => {
-  const ref = useRef(null);
+  const mainHeaderNode = useRef(null);
+  let { page } = useParams();
 
   useEffect(() => {
-    if (document.hasFocus()) {
-      console.log(ref.current);
-      ref.current.focus();
-    }
-  }, []);
+    mainHeaderNode.current.focus();
+  }, [page]);
 
   return (
     <header className="relative py-16 bg-white overflow-hidden">
@@ -27,7 +26,7 @@ const PageHero = (props) => {
             {props.supHeader}
           </p>
           <h1
-            ref={ref}
+            ref={mainHeaderNode}
             tabIndex={-1}
             className="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl focus:outline-none focus:ring-8 focus:ring-indigo-600 focus:ring-offset-8 focus:ring-offset-indigo-700"
           >
