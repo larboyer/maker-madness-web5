@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import mm_bulb from '../img/mm_bulb_00.png';
-import achieve_logo from '../img/achieve_logo_02.png';
 import PageTemplate from '../components/PageTemplate';
 import { NavLink, useParams } from 'react-router-dom';
 
@@ -71,7 +70,6 @@ const Home = () => {
             levels
           </li>
         </ul>
-        <img src={achieve_logo} alt="logo" />
       </PageTemplate>
     </>
   );
