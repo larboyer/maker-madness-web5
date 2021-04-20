@@ -55,7 +55,7 @@ const Footer = () => {
             </NavLink>
           </div>
         </nav>
-        <img className="w-32 mx-auto" src={achieve_logo} alt="logo" />
+        <img className="w-32 mx-auto mt-12" src={achieve_logo} alt="logo" />
         <p className="mt-8 text-center text-base text-gray-400">
           &copy; 2021 Maker Madness. All rights reserved.
         </p>
